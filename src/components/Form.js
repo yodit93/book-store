@@ -27,13 +27,14 @@ const Form = () => {
   };
   return (
     <form className="form" id="book-form" onSubmit={handleSubmit}>
-      <h2 className="form-title">Add New Book</h2>
+      <div className="Line" />
+      <h2 className="form-title">ADD NEW BOOK</h2>
       <div className="form-rapper">
         <input
           type="text"
           className="add-book"
           name="title"
-          placeholder="Book title"
+          placeholder="BOOK TITLE"
           value={inputValue.title}
           onChange={handleChange}
         />
@@ -41,11 +42,11 @@ const Form = () => {
           type="text"
           className="category"
           name="author"
-          placeholder="Book author"
+          placeholder="BOOK AUTHOR"
           value={inputValue.author}
           onChange={handleChange}
         />
-        <button className="add-btn" type="submit">Add</button>
+        <button className="add-btn" type="submit">ADD BOOK</button>
       </div>
     </form>
   );
