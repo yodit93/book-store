@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { v4 as uuid } from 'uuid';
 import { useDispatch } from 'react-redux';
-import { addBook } from '../redux/books/booksSlice';
+import { getBookLists, postBook } from '../redux/books/booksSlice';
 
 const Form = () => {
   const dispatch = useDispatch();
@@ -14,12 +14,12 @@ const Form = () => {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addBook({
+    dispatch(postBook({
       item_id: uuid(),
       title: inputValue.title,
       author: inputValue.author,
       category: 'Nonfiction',
-    }));
+    })).then(() => dispatch(getBookLists()));
     setInputValue({
       title: '',
       author: '',

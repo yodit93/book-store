@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { getBookLists, removeList } from '../redux/books/booksSlice';
 
 const BookItem = ({ book }) => {
   const dispatch = useDispatch();
@@ -38,6 +38,7 @@ const BookItem = ({ book }) => {
           <span className="Update-progress">UPDATE PROGRESS</span>
         </div>
       </div>
+
     </li>
   );
 };
