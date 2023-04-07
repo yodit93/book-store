@@ -59,17 +59,12 @@ body {
 }
 
 .Oval {
-  width: 2.813rem;
-  height: 2.813rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
   margin: 0 0 0 31rem;
   padding: 0.875rem;
   border: solid 1px #e8e8e8;
-}
-
-.Mask {
-  width: 1.063rem;
-  height: 1.063rem;
-  background-color: #0290ff;
 }
 
 .book-list {
@@ -260,6 +255,7 @@ body {
 }
 
 .form {
+  width: 100%;
   padding: 0 5%;
   display: flex;
   flex-direction: column;
@@ -267,7 +263,7 @@ body {
 }
 
 .Line {
-  width: 75rem;
+  width: 72rem;
   height: 0.125rem;
   margin: 2.5rem 0.063rem 1.5rem 0;
   border: solid 1px #e8e8e8;
@@ -288,7 +284,7 @@ body {
 }
 
 .add-book {
-  width: 25rem;
+  width: 30rem;
   height: 3rem;
   margin: 0 2.125rem 0 0;
   padding-left: 0.8rem;
