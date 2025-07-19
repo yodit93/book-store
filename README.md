@@ -50,7 +50,7 @@
 
 > Link to deployed project.
 
-- [Live Demo Link](https://book-store-pb0g.onrender.com)
+- [Live Demo Link](https://book-store-git-dev-yodits-projects-c31925a8.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
